@@ -1,0 +1,11 @@
+Version 1.0
+Jasim Dhaif
+- added controller files
+- added routes files
+- added models files
+- added views files
+- added logo in /public/images
+- coded models - need to edit later not done still
+- deleted juma.htlm file
+- deleted the empty "txt.txt" files
+
