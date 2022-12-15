@@ -8,8 +8,6 @@ exports.blog_create_post = (req, res) => {
 exports.blog_get = (req, res) => {
 
     res.render("home/blog");
-}
-
-    res.send("Blog working on auth file")
+    // res.send("Blog working on auth file")
 }
 
