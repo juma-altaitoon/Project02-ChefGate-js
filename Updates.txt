@@ -28,3 +28,9 @@ Version 1.2
 - Updated controllers/index - render home/index page to test nav links.
 - created & coded helper/config.js file.
 
+Version 1.4
+Maitham
+- added the stylesheet at the layout.ejs.
+- added buttons using the bootstarp website to the alert.
+- created CSS folder and added style.css file with header.
+- installed dotenv, method, passport and passport local.
