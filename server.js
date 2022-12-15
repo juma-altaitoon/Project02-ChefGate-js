@@ -26,7 +26,6 @@ const chefRoute = require('./routes/chefs');
 app.use('/', chefRoute);
 const authRoute = require('./routes/auth');
 app.use('/', authRoute);
-
 app.set("view engine", "ejs");
 app.listen(port,() => {
     console.log("app is running");
