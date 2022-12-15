@@ -34,3 +34,4 @@ Maitham
 - added buttons using the bootstarp website to the alert.
 - created CSS folder and added style.css file with header.
 - installed dotenv, method, passport and passport local.
+- added drop gatagory down menu in recipe.ejs 
