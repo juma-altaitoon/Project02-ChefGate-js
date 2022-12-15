@@ -4,11 +4,31 @@ const mongoose = require('mongoose');
 const port = 4000;
 const app = express();
 
+// const bcrypt = require('bcrypt');
+
 //To look for F.E files
 app.use(express.static("public"));
 
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
+
+// Require Passport
+const passport = require('./helper/config')
+
+// Require Express-Session
+const session = require('express-session');
+
+app.use(session( {
+    secret: process.env.SECRET,
+    saveUninitialized: true,
+    resave: false,
+    cookie: {maxAge:36000000}
+}
+));
+
+// Initialize passport & Session
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 //Import and mount routes
