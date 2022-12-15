@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const port = 4000;
+require('dotenv').config(); //dotenv is installed
+const port= process.env.PORT;
 const app = express();
 
 // const bcrypt = require('bcrypt');
@@ -11,25 +12,6 @@ app.use(express.static("public"));
 
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
-
-// Require Passport
-const passport = require('./helper/config')
-
-// Require Express-Session
-const session = require('express-session');
-
-app.use(session( {
-    secret: process.env.SECRET,
-    saveUninitialized: true,
-    resave: false,
-    cookie: {maxAge:36000000}
-}
-));
-
-// Initialize passport & Session
-app.use(passport.initialize());
-app.use(passport.session());
-
 
 //Import and mount routes
 const indexRoute = require('./routes/index');
@@ -48,8 +30,6 @@ const authRoute = require('./routes/auth');
 app.use('/', authRoute);
 
 app.set("view engine", "ejs");
-
-
 app.listen(port,() => {
     console.log("app is running");
-})
+});

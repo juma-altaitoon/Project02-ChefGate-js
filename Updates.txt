@@ -13,6 +13,18 @@ Version 1.1
 Jasim Dhaif
 - connected server with routes and controllers files
 
+
+
+Version 1.2
+Juma
+- Updated controllers/index - render home/index page to test nav links.
+- created & coded helper/config.js file.
+
+Version 1.3
+- changed the controllers to render
+- added basic layouts
+
 Version 1.2
 - Updated controllers/index - render home/index page to test nav links.
 - created & coded helper/config.js file.
+
