@@ -5,13 +5,28 @@ require('dotenv').config(); //dotenv is installed
 const port= process.env.PORT;
 const app = express();
 
-// const bcrypt = require('bcrypt');
-
 //To look for F.E files
 app.use(express.static("public"));
 
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
+
+const passport = require('./helper/config');
+const session = require('express-session');
+
+app.use(session ({
+    secret: process.env.SECRET,
+    saveUninitialized: true,
+    resave: false,
+    cookie: {maxAge: 40000000}
+}
+));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+
 
 //Import and mount routes
 const indexRoute = require('./routes/index');
@@ -28,6 +43,15 @@ const chefRoute = require('./routes/chefs');
 app.use('/', chefRoute);
 const authRoute = require('./routes/auth');
 app.use('/', authRoute);
+
+mongoose.set('strictQuery', false);
+
+mongoose.connect(process.env.mongoDBURL,
+    {useUrlParser: true, useUnifiedTopology: true},
+    ()=> {
+        console.log("Connected to MongoDB!")
+    });
+
 app.set("view engine", "ejs");
 app.listen(port,() => {
     console.log("app is running");

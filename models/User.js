@@ -34,7 +34,11 @@ const userSchema = mongoose.Schema ({
 {
     timestamps: true
 })
-
+userSchema.methods.verifyPassword = function(password){
+    console.log(password)
+    console.log(this.password);
+    return bcrypt.compareSync(password, this.password);
+}
 
 
 const User = mongoose.model("User", userSchema);

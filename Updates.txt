@@ -40,3 +40,10 @@ Version 1.5
 Maitham
 - Recipe page is not working.
 - Added images onto every page excluding the recipe page.
+
+Version 1.6
+Juma
+"Update - auth.js in controllers & routes, server.js and updated login.ejs and signup ejs. I also added verify password method to models/User.
+- Sign up is not working: not saving into daatabase. 
+
+
