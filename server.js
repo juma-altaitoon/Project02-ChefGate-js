@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
-const port = 4000;
+require('dotenv').config(); //dotenv is installed
+const port= process.env.PORT;
 const app = express();
 
 //To look for F.E files
@@ -9,7 +10,6 @@ app.use(express.static("public"));
 
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
-
 
 //Import and mount routes
 const indexRoute = require('./routes/index');
@@ -28,8 +28,6 @@ const authRoute = require('./routes/auth');
 app.use('/', authRoute);
 
 app.set("view engine", "ejs");
-
-
 app.listen(port,() => {
     console.log("app is running");
-})
+});
