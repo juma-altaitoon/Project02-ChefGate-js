@@ -30,12 +30,20 @@ Version 1.2
 
 Version 1.4
 Maitham
-- added the stylesheet at the layout.ejs.
+- added the stylesheet link at the layout.ejs.
 - added buttons using the bootstarp website to the alert.
 - created CSS folder and added style.css file with header.
 - installed dotenv, method, passport and passport local.
 - added drop gatagory down menu in recipe.ejs 
 
+Version 1.5
+Maitham
+- Recipe page is not working.
+- Added images onto every page excluding the recipe page.
+
+Version 1.6
 Juma
 "Update - auth.js in controllers & routes, server.js and updated login.ejs and signup ejs. I also added verify password method to models/User.
 - Sign up is not working: not saving into daatabase. 
+
+
