@@ -35,3 +35,7 @@ Maitham
 - created CSS folder and added style.css file with header.
 - installed dotenv, method, passport and passport local.
 - added drop gatagory down menu in recipe.ejs 
+
+Juma
+"Update - auth.js in controllers & routes, server.js and updated login.ejs and signup ejs. I also added verify password method to models/User.
+- Sign up is not working: not saving into daatabase. 
