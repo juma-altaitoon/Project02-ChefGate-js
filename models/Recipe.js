@@ -3,8 +3,15 @@ const recipeSchema = mongoose.Schema({
     mealName: String,
     mealType: String,
     prepareTime: Number,
-    mealDescription: String
+    mealDescription: String,
+    chef : [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Recipe'
+    }]
 },
 {
     timestamps: true
 })
+
+const Recipe = mongoose.model('Recipe', recipeSchema);
+module.exports = Recipe;
