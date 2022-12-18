@@ -1,8 +1,73 @@
-.header {
-    background-image: url("/public/images/bakes.png");
+
+body {
+    background-image: url("images/bakes.png");
     padding: 60px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    background: #ffffff;
+    color: rgb(213, 22, 22);
     font-size: 30px;
 }
+
+a {color: let(--bs-dark);}
+
+/* .app{
+    /* width: 50rem;
+    height: 30rem;
+    box-shadow: 0 45px 90px black;
+    margin: 10px 0;
+    display: grid; */
+    /* grid-template-columns: 60px 1fr;
+    grid-template-rows: 50px 50px 1fr; */
+/* } */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 10;
+    grid-row: 20;
+    align-items:center;
+    color: black;
+}
+
+.search {
+    position: relative;
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category__link{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 300ms all;
+}
+.category_link:hover {
+    transform: scale(1.1);
+}
+
+.pic-1 {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 9px rgba(44, 2, 2, 0.5);
+}
+
+.pic-1 img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.pic-1:hover {
+    transform: scale(1.1);
+}
+

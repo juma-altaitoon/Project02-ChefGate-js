@@ -7,7 +7,7 @@ const app = express();
 
 // const bcrypt = require('bcrypt');
 
-//To look for F.E files
+//To look for F.E files//static files: app.use(express.static(path.join(__dirname,'views')));
 app.use(express.static("public"));
 
 const expressLayouts = require("express-ejs-layouts");
@@ -32,3 +32,4 @@ app.set("view engine", "ejs");
 app.listen(port,() => {
     console.log("app is running");
 });
+
