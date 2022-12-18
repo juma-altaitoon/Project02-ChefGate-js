@@ -35,9 +35,3 @@ exports.auth_signup_post = (req,res) => {
 exports.auth_login_get = (req,res) => {
     res.render("auth/login");
 }
-
-//  LogIn - POST
-exports.auth_login_post = passport.authenticate('local', {
-    successRedirect: '/',
-    failureRedirect: '/auth/login'
-})
