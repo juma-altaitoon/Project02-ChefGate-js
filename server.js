@@ -47,7 +47,7 @@ app.use('/', authRoute);
 mongoose.set('strictQuery', false);
 
 mongoose.connect(process.env.mongoDBURL,
-    {useUrlParser: true, useUnifiedTopology: true},
+    {useNewUrlParser: true, useUnifiedTopology: true},
     ()=> {
         console.log("Connected to MongoDB!")
     });
