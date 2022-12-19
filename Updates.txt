@@ -82,3 +82,10 @@ Maitham Alaraibi
 - Added font from google.
 - Fixed the recipe extra "S" letter on server.js.
 - Disabled some of the codes that were used pre the change.
+
+Version 2.1 -
+Juma Altaitoon
+- Updated model/User to include userRole and profilePicture
+- Updated login and signup pages and connect login and signup buttons to their pages.
+- Still working on registering users on database to test login and logout functions
+- I'll check if the userRole will work or not.

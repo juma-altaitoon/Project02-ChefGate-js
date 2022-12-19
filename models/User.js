@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const { fileLoader } = require('ejs');
 
 const userSchema = mongoose.Schema ({
     firstName: {
@@ -16,6 +17,14 @@ const userSchema = mongoose.Schema ({
         maxlength: [20]
     },
 
+    userName: {
+        type: String,
+        required: true,
+        unique: true,
+        minlength: [4, "Please enter your User Name min 4 Characters"],
+        maxlength: [20]
+    },
+
     emailAddress: {
         type: String,
         required: true,
@@ -28,6 +37,17 @@ const userSchema = mongoose.Schema ({
         required: true,
         minlength: [4]
 
+    },
+    
+    userRole: {
+        type: String,
+        required: false,
+        enum: ["Admin", "Chef", "User"]
+    },
+
+    profilePicture: {
+        type: File,
+        required: false
     }
 
 },
