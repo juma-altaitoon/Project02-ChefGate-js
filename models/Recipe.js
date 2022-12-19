@@ -6,7 +6,7 @@ const recipeSchema = mongoose.Schema({
     mealDescription: String,
     chef : [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Recipe'
+        ref: 'Chef'
     }]
 },
 {
