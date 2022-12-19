@@ -1,8 +1,113 @@
-.header {
-    background-image: url("/public/images/bakes.png");
+body {
+    background-image: url('..images/food-bgr.svg'); 
     padding: 60px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    background: rgb(227, 169, 202);
+    color: rgb(213, 22, 105);
+    font-size: 30px;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+/* background is not showing
+/* .bg-img {
+    background-image: url(/images/food-bgr.svg); 
+    background-size: cover; 
+}  */
+
+
+/* a {color: let(--bs-dark);} */
+
+.pai {
+    color: black;
+    background-color: rgb(99, 193, 123);
+    padding: 40px;
+    font-size: larger;
+}
+/* .app{
+     width: 50rem;
+    height: 30rem;
+    box-shadow: 0 45px 90px black;
+    margin: 10px 0;
+    display: grid; 
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 50px 50px 1fr;
+} */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 10;
+    grid-row: 20;
+    align-items:center;
+    color: black;
+}
+
+.search {
+    position: relative;
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category__link{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: 300ms all;
+}
+.category_link:hover {
+    transform: scale(1.1);
+}
+
+.pic-1 {
+    display: flex;
+    overflow: hidden;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 9px rgba(44, 2, 2, 0.5);
+}
+
+
+.pic-1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pic-1:hover {
+    transform: scale(1.1);
+}
+
+.pic-1--large {
+    height: 400px;
+}
+
+.form-group {
+    color: rgb(187, 236, 236);
+    background-color: rgb(35, 40, 40);
+    width: 700px;
+    justify-content: center;
+    justify-items: center;
+    display:block; 
+}
+
+.tags-list{
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    border: 4px white;
+}
+.tag-container{
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: brown;
     font-size: 30px;
 }

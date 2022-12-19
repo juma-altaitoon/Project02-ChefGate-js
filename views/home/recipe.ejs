@@ -1,4 +1,4 @@
-<header id="header1" </header>
+<header id="header1"></header> 
 <h1>Recipes & Cooking Ideas</h1>
 <a href="">Breakfast</a>
 <a href="">Lunch</a>
@@ -23,10 +23,61 @@
     </div>
 
     <div class="form-group">
-        <label>Email Address</label>
+        <label>Dish title</label>
         <input type="text" name="emailAddress" class="form-control">
     </div>
+<br>
 
     <br>
-    <button type="submit" class="btn btn-Success">Create Recipe</button>
+    <p>Live cooking with fresh ingredients!</p>
+<!-- The # stands for: add a new page to driect -->
+    <div class=" row row-cols-4  ">
+        <a href="/recipe/#" clas="category_link">
+            <div class="pic-1 pic-1--large shadow">
+                <img src="/images/cheflatest/5.jpg" >
+            </div> 
+            <a href="/recipe/#" clas="category_link">
+                <div class="pic-1 pic-1--large shadow">
+                    <img src="/images/cheflatest/1.jpg">    
+        </div>
+        <a href="/recipe/#" clas="category_link">
+            <div class="pic-1 pic-1--large shadow">
+                <img src="/images/cheflatest/2.jpg">
+            </div>
+            <a href="/recipe/#" clas="category_link">
+                <div class="pic-1 pic-1--large shadow">
+                    <img src="/images/cheflatest/3.jpg">
+                </div>
+        </a>
+    </div>
+    <br><br>
+</section>
+<br><hr><br><br>
+
+
+<br>
+    <!-- <button type="submit" class="btn btn-Success">Create Recipe</button> -->
 </form>
+<section class="px-4 py2 my-2 text-center">
+    <img src="/images/recipe1.png" alt="" width="400" height="400">
+    <h3 class="display-6 fw-bold">Be part of our kitchen and publish your recipe TODAY!</h3>
+    <a href="#" class="btn btn-warning btn-dark btn-1g">Submit Recipe</a>
+</section>
+<br><hr>
+<!-- recipe container -->
+<section class="recipe-container">
+<!-- tag: Add forms on details at Recipe folder  -->
+<div class="tag-container">
+    <h4>Recipes</h4>
+
+    <div class="tags-list">
+        <a href="/views/recipe/details.ejs">Breakfast</a>
+        <a href="/views/recipe/details.ejs">Hot Drinks</a>
+        <a href="/views/recipe/details.ejs">Lunch</a>
+        <a href="/views/recipe/details.ejs">Dessert</a>
+        <a href="/views/recipe/details.ejs">Dinner</a>
+    </div>
+</div>
+<!-- list  -->
+<!-- <div class="recipe-list"></div> -->
+</section>
