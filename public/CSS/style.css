@@ -1,6 +1,5 @@
 body {
-    background-image: url('../images/foodbk.png'); 
-    background-size: 100%;
+    background-image: url('/images/foodbk.png'); 
     padding: 30px;
     text-align: center;
     background: rgb(255, 255, 255);
@@ -8,8 +7,30 @@ body {
     font-size: 30px;
     font-family: 'Fredericka the Great', cursive;
 }
+/* /* background is not showing */ 
+/* #bg-img {
+    background-size: cover; 
+    background: transparent;
+}  */
 
 
+/* a {color: let(--bs-dark);}
+/*  */
+/* .pai {
+    color: black;
+    background-color: rgb(99, 193, 123);
+    padding: 40px;
+    font-size: larger;
+} */
+/* .app{
+     width: 50rem;
+    height: 30rem;
+    box-shadow: 0 45px 90px black;
+    margin: 10px 0;
+    display: grid; 
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 50px 50px 1fr;
+} */
 
 .header{
     display: grid;
@@ -32,7 +53,7 @@ img {
   margin-right: auto;
 }
 
-.category_link{
+.category__link{
     text-align: center;
     display: block;
     text-decoration: none;
@@ -124,7 +145,7 @@ border-right: 1px sold grey;
     justify-content: center;
 }
 #footer-logo{
-    background: url('../images/logo-01.png');
+    background: url('/public/images/logo-01.png');
     margin: 20px 0;
     bottom: 10px;
 }
@@ -145,9 +166,30 @@ ul a {
     justify-content: center;
     align-items: center;
     width: 40px;
-
+    
 }
+/* still background is not working*/
+#bk-sign{
+    background: url(../images/foodbk.png);
+    background-size: cover;
+    animation: infinite;
+}
+/* 
+#fsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+}
+#lsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+} */
 
+/* #youtube {
+    display: block;
+    width: 300px;
+} */
 #main-recipe{
 position: relative;
     grid-gap: 25px;
