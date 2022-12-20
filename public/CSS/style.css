@@ -1,19 +1,22 @@
 body {
-    background-image: url('/images/foodbk.png'); 
     padding: 30px;
     text-align: center;
-    background: rgb(255, 255, 255);
-    color: rgb(213, 22, 105);
+    background: rgb(42, 42, 51);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     font-family: 'Fredericka the Great', cursive;
 }
-/* /* background is not showing */ 
-/* #bg-img {
-    background-size: cover; 
-    background: transparent;
-}  */
+#box2{
+    font-size: larger;
+    color: blueviolet;
+    text-align: center;
+}
 
-
+#homepage{
+    border-radius: 50%;
+    padding: 15px;
+    margin:5px
+}
 /* a {color: let(--bs-dark);}
 /*  */
 /* .pai {
@@ -276,4 +279,29 @@ position: relative;
     justify-content: center;
     align-items: center;  
     background-color: black; 
+}
+
+#login{
+    border-radius: 50%;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    background-color: black; 
+}
+
+#password3{
+    border-radius: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    background-color: black; 
+}
+
+#subin {
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;  
 }
