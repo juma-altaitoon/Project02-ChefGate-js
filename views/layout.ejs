@@ -9,60 +9,56 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-
+    <img src="/images/logo-01.png" width="150" height="100" alt=""> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="bg-img"></div>
-    <div class="container-xx1 px-md-5 bg-white shadow-1g">
-        <a href="/" class="d-flex align-items-center justify-content-center justify-content-center col-md-3 mb-2 mb-md-0 text-bg-dark text-decoration-none">
-        <img src="/images/logo-01.png" width="100" height="60" alt="">   
-        </a>
-        <!-- <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-              </a>
-        -->
-              <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white"><About-us></About-us></a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Recipe</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Contact-us</a></li>
-              </ul> -->
 
-<div class="col-md-2 text-end">
+  <!-- <div class="bg-img"> <img src="" alt=""></div>
+         </a> -->
+  
+<!-- <div class=" row col-md-2 text-end">
     <form method="POST" action="/search">
         <input type="search" name="recipesearch" class="form-control" placeholder="Search...">
     </form>
+</div> -->
+<br>    
+<!-- <div class="text-end">
+    <button type="button" class="btn btn-outline-primary me-4" onclick="window.location.href='/auth/login';">Login</button>
+    <button type="button" class="btn btn-warning" onclick="window.location.href='/auth/signup';">Sign-up</button>          </div>
+   </div>
+</div> 
+  </header>
 </div>
+<section id="sc-header">
+  <div id="logo"></div>
+  <label for="abc">
+    <div></div>
+    <div></div>
+    <div></div> -->
+ 
+    <ul id="navbar"> 
+        <a href="/">
+            <ul>Home</ul>
+        </a>
+        <a href="/aboutus">
+          <ul>About Us</ul>
+      </a>
+      <a href="/contactus">
+        <ul>Contact Us</ul>
+    </a>
+    <a href="/recipe">
+      <ul>Recipes</ul>
+  </a>
+  <a href="/blog">
+    <ul>Blog</ul>
+</a>
+</ul>
+</section> 
 
-              <!-- 
-              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-              </form> -->
-      
-              <div class="text-end">
-                <button type="button" class="btn btn-outline-primary me-4" onclick="window.location.href='/auth/login';">Login</button>
-                <button type="button" class="btn btn-warning" onclick="window.location.href='/auth/signup';">Sign-up</button>
-              </div>
-            </div>
-          </div> 
-        </header>
-<!-- <div class="header">
-    <img src="/images/logo-01.png" alt=""> -->
-</div>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/aboutus">About Us</a>
-        <a href="/contactus">Contact Us</a>
-        <a href="/recipe">Recipes</a>
-        <a href="/blog">Blog</a>
-
-    </nav> 
     <br><hr><br>
+
   <!-- <button type="button" class="btn btn-primary position-relative">
         Inbox <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
       </button> -->
@@ -80,10 +76,28 @@
         <%= body %>
     </main> -->
 </div>
-    <footer class="pai">
-        <p>Built by JJM</p>
-    </footer>
+<section id="sc-footer">
+<main>
+  <div class="box" id="box1">
+    <img class="icon" id="tiktok" src="/images/social-icon/soci-ico/5.png" alt="">
+    <img class="icon" id="instagram" src="/images/social-icon/soci-ico/4.png" alt="">
+    <img class="icon" id="youtube" src="/images/social-icon/soci-ico/2.png" alt="">
 
+  </div>
+  <div class="box" id="box2">
+    <div id="footer-logo"></div>
+  </div>
+  <div class="box" id="box3">
+    <div id="footernav">
+    <a href="/aboutus"> <ul>About Us</ul> </a>
+  <a href="/contactus"> <ul>Contact Us</ul> </a>
+  </div>
+  
+    <!-- <footer class="pai">
+        <p>Built by JJM</p>
+    </footer> -->
+  </main>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

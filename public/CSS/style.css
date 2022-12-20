@@ -1,28 +1,29 @@
 body {
-    background-image: url('..images/food-bgr.svg'); 
-    padding: 60px;
+    background-image: url('/images/foodbk.png'); 
+    padding: 30px;
     text-align: center;
-    background: rgb(227, 169, 202);
+    background: rgb(255, 255, 255);
     color: rgb(213, 22, 105);
     font-size: 30px;
     font-family: 'Fredericka the Great', cursive;
-
 }
-/* background is not showing
-/* .bg-img {
-    background-image: url(/images/food-bgr.svg); 
+/* /* background is not showing */ 
+/* #bg-img {
     background-size: cover; 
+    background: transparent;
+
+
 }  */
 
 
-/* a {color: let(--bs-dark);} */
-
-.pai {
+/* a {color: let(--bs-dark);}
+/*  */
+/* .pai {
     color: black;
     background-color: rgb(99, 193, 123);
     padding: 40px;
     font-size: larger;
-}
+} */
 /* .app{
      width: 50rem;
     height: 30rem;
@@ -92,7 +93,7 @@ img {
 
 .form-group {
     color: rgb(187, 236, 236);
-    background-color: rgb(35, 40, 40);
+    background-color: rgb(255, 255, 255);
     width: 700px;
     justify-content: center;
     justify-items: center;
@@ -110,4 +111,171 @@ img {
     font-weight: 500;
     color: brown;
     font-size: 30px;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    margin: 0 auto;
+    color: rgb(105, 193, 197);
+}
+#sc-footer {
+    margin: 100px 0 0;
+    /* background: grey; */
+    padding: 50px;
+}
+main{
+    display: flex;
+}
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    /* font-size: 50%; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+#box1{
+border-right: 1px sold grey;
+}
+.box{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+#footer-logo{
+    background: url('/public/images/logo-01.png');
+    margin: 20px 0;
+    bottom: 10px;
+}
+#footernav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 0 50px 0;
+    margin: 0 auto;
+    font-size: medium;
+}
+ul a {
+    text-decoration: none;
+}
+#pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    
+}
+/* still background is not working*/
+#bk-sign{
+    background: url(../images/foodbk.png);
+    background-size: cover;
+    animation: infinite;
+}
+/* 
+#fsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+}
+#lsname{
+    justify-content: center;
+    align-items: center;
+    left: 40px;
+} */
+
+/* #youtube {
+    display: block;
+    width: 300px;
+} */
+#main-recipe{
+position: relative;
+    grid-gap: 25px;
+    margin-top: 20px;
+    grid-row: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#box-recipe{
+        width: 100%;
+        position: absolute;
+        padding: 15px;
+        background: transparent;
+        padding: 15px;
+        top: auto;
+    }
+    h2{
+        font-size: medium;
+    }
+    .recipe{
+        width: 35%;
+        height: auto;
+        position: relative;
+        background: transparent;
+    }
+    .p{
+        font-size: 25px;
+        text-align: justify;
+    }
+
+#section-latest{
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+#recipe {
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;   
+}
+
+#box-recipe1{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+
+#box-recipe2{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center; 
+    background-color: black; 
+}
+#box-recipe3{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
+}
+#box-recipe4{
+    border-radius: 50%;
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 20px;
+    grid-row: 40px;
+    justify-content: center;
+    align-items: center;  
+    background-color: black; 
 }
