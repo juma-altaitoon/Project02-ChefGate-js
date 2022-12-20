@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
-const { fileLoader } = require('ejs');
 
 const userSchema = mongoose.Schema ({
     firstName: {
@@ -35,28 +34,36 @@ const userSchema = mongoose.Schema ({
     password: {
         type: String,
         required: true,
-        minlength: [4]
-
+        minlength: [6, "Password is too short..."]
     },
     
     userRole: {
         type: String,
-        required: false,
-        enum: ["Admin", "Chef", "User"]
+        enum: ["Admin", "User", "Chef"],
+        required: false
     },
 
     profilePicture: {
         type: String,
-        required: false
-    }
+        required: false 
+    },
 
+    socialMedia: {
+        type: Map,
+        of: String,
+        required: false
+    },
+
+    recipe: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Recipe'
+    }]
 },
 {
     timestamps: true
 })
 userSchema.methods.verifyPassword = function(password){
-    console.log(password)
-    console.log(this.password);
+    console.log(`${password}  -----  ${this.password}`);
     return bcrypt.compareSync(password, this.password);
 }
 

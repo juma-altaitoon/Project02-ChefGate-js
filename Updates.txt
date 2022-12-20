@@ -97,3 +97,10 @@ Maitham Alaraibi
 - Fixed the Author issue in the Recipe/Add in addition replaced the '#' with 'add'.
 - Aligned and chnaged the appearance of Add recipe in addition included ingrediants and cooking time.
 - Added new pictures to the blog and recipe pages.
+
+
+Version 2.2.1 -
+Juma Altaitoon
+- Login and Sign up work. created and connected Logout button.
+- updated some chef routes and ejs pages.
+- working on userRoles so we can have one login for Chef and Users.

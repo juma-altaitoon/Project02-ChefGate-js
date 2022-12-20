@@ -6,7 +6,7 @@ exports.chef_create_post = (req, res) => {
     let chef = new chef(req.body);
 }
 exports.chefs_get = (req, res) => {
-    res.render("home/chef");
+    res.render("chef/index");
 }
 
 exports.chefs_create_get = (req, res) => {
