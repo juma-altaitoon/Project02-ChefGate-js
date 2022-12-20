@@ -9,6 +9,7 @@
 
 <form method="POST" action="/recipe/add">
     <label for="recipe">Choose a catagory:</label>
+    <br>
     <select id="catagory" name="catagory">
       <option value="breakfast">Breakfast</option>
       <option value="lunch">Lunch</option>
@@ -17,41 +18,56 @@
       <option value="dessert">Dessert</option>
       <option value="beverage">Beverage</option>
     </select>
-    <div class="form-group">
-        <label>Name</label>
-        <input type="text" name="name" class="form-control">
+<br><br>
+<div id="reci-info">
+    <div class="form-group" id="box-recipe1">
+        <label>Recipe Owner</label>
+        <input type="text" name="text" class="form-control">
     </div>
 
-    <div class="form-group">
+    <div class="form-group" id="box-recipe2">
         <label>Dish title</label>
         <input type="text" name="emailAddress" class="form-control">
     </div>
+
+    <div class="form-group" id="box-recipe3">
+        <label>Cooking Time</label>
+        <input type="text" name="text" class="form-control">
+    </div>
+
+    <div class="form-group" id="box-recipe4">
+        <label>Ingredients</label>
+        <input type="text" name="text" class="form-control">
+    </div>
+</div>
+<br>
+<a href="#" class="btn btn-warning btn-dark btn-1g">Submit Recipe</a>
 <br>
 
     <br>
     <p>Live cooking with fresh ingredients!</p>
-<!-- The # stands for: add a new page to driect -->
+<!-- The # stands for: add page to driect: author needs to be declared -->
     <div class=" row row-cols-4  ">
-        <a href="/recipe/#" clas="category_link">
-            <div class="pic-1 pic-1--large shadow">
+        <a href="/recipe/add" clas="category_link">
+            <div class="pic-1 pic-1--largest shadow">
                 <img src="/images/cheflatest/5.jpg" >
             </div> 
-            <a href="/recipe/#" clas="category_link">
-                <div class="pic-1 pic-1--large shadow">
+
+            <a href="/recipe/add" clas="category_link">
+                <div class="pic-1 pic-1--largest shadow">
                     <img src="/images/cheflatest/1.jpg">    
         </div>
-        <a href="/recipe/#" clas="category_link">
-            <div class="pic-1 pic-1--large shadow">
+        <a href="/recipe/add" clas="category_link">
+            <div class="pic-1 pic-1--largest shadow">
                 <img src="/images/cheflatest/2.jpg">
             </div>
-            <a href="/recipe/#" clas="category_link">
-                <div class="pic-1 pic-1--large shadow">
+            <a href="/recipe/add" clas="category_link">
+                <div class="pic-1 pic-1--largest shadow">
                     <img src="/images/cheflatest/3.jpg">
                 </div>
         </a>
     </div>
     <br><br>
-</section>
 <br><hr><br><br>
 
 
@@ -61,7 +77,7 @@
 <section class="px-4 py2 my-2 text-center">
     <img src="/images/recipe1.png" alt="" width="400" height="400">
     <h3 class="display-6 fw-bold">Be part of our kitchen and publish your recipe TODAY!</h3>
-    <a href="#" class="btn btn-warning btn-dark btn-1g">Submit Recipe</a>
+    
 </section>
 <br><hr>
 <!-- recipe container -->
@@ -80,4 +96,69 @@
 </div>
 <!-- list  -->
 <!-- <div class="recipe-list"></div> -->
+</section>
+
+<section id="section-latest">
+    <div type="search" name="search" id="search--recipes" placeholder="Search">
+    </div>
+    <div class="  row row-cols-4 ">
+        <a href="/recipe/add" clas="category_link">
+            <div class="pic-1 pic-1--largest shadow cent">
+            <div id="bahraini">
+                <img src="/images/food/indian-food.jpg" >
+            </div> 
+        </div>
+            <h2>Bahraini Recipes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+            <br>
+        <div id="italian">
+            <a href="/recipe/add" clas="category_link">
+                <div class="pic-1 pic-1--largest shadow">
+                    <img src="/images/food/italian.png">    
+        </div>
+    </div>
+        <br>
+        <div id="mex">
+        <a href="/recipe/add" clas="category_link">
+            <div class="pic-1 pic-1--largest shadow">
+                <img src="/images/food/mexican-food.jpg">
+            </div>
+        </div>
+            <br>
+            <div id="america">
+            <a href="/recipe/add" clas="category_link">
+                <div class="pic-1 pic-1--largest shadow">
+                    <img src="/images/food/american-food.jpg">
+                </div>
+            </div>
+        </a>
+    </div>
+    <br><br>
+    <!-- <div  id="main-recipe" >
+        <div class="recipe">
+            <img src="/images/food/indian-food.jpg" alt="">
+            <div class="box-recipe">
+                <h2>Bahraini Recipes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+          
+            <img src="/images/food/chocolate-banoffe-whoopie-pies.jpg" alt="">
+            <div class="box-recipe">
+                <h2>Italian Recipes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+  
+            <img src="/images/food/spanish-food.jpg" alt="">
+            <div class="box-recipe">
+                <h2>Spanish Recipes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+           
+                <img src="/images/food/american-food.jpg" alt="">
+            <div class="box-recipe">
+                <h2>Amarican Recipes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+           
+            </div> 
+        </div> 
+    </div> 
+</div>  -->
+
 </section>

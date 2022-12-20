@@ -46,4 +46,46 @@ Juma
 "Update - auth.js in controllers & routes, server.js and updated login.ejs and signup ejs. I also added verify password method to models/User.
 - Sign up is not working: not saving into daatabase. 
 
+Version 1.7
+Jasim Dhaif
+- modified/connected Chef and Recipe models to use MMR saving method
+- fixed recipe page error
+- fixed about us page error
+- modified layouts.ejs to connect with public
+- (removed conflicts between my codes and Juma as we worked both on same things).
 
+
+Version 1.8
+Jasim Dhaif
+- connected chef ejs layouts with router and controller
+- connected recipe ejs layouts with router and controller
+- modified layouts
+- modified server.js
+- modified mongoDBURL link
+
+Version 1.9
+Jasim Dhaif
+- removed unnecessary codes and comments.
+- fixed errors in auth controllers
+- modified and fixed errors in chefs controllers
+- modified layouts (navbar need to bed fixed)----
+- fixed errors in auth routes
+- fixed errors in chefs routes
+- application now is able to connect to the server
+
+Version 2.0
+Maitham Alaraibi
+- Added bootstrap latest.
+- Added header to include the sign up + sign in. Need help to change the header color as well as the main background.
+- Added and arranged pictures on home, contactu us, recipe and blog.
+- Added search feature to the layout page and added the team intials on the footer.
+- Added font from google.
+- Fixed the recipe extra "S" letter on server.js.
+- Disabled some of the codes that were used pre the change.
+
+Version 2.1 -
+Juma Altaitoon
+- Updated model/User to include userRole and profilePicture
+- Updated login and signup pages and connect login and signup buttons to their pages.
+- Still working on registering users on database to test login and logout functions
+- I'll check if the userRole will work or not.
