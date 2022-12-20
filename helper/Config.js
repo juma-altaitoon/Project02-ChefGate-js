@@ -16,17 +16,23 @@ passport.deserializeUser(function(id, done) {
 })
 
 passport.use(new LocalStrategy({
-    userNameField: "emailAddress",
+    usernameField: "emailAddress",
     passwordField: "password"
 },
     function(emailAddress, password, done) {
-        User.findOne({ emailAddress: emailAddress }, function (err, user) {
+        console.log("emailAddress", emailAddress);
+      User.findOne({ emailAddress: emailAddress }, function (err, user) {
+        console.log("err", err);
+        console.log("user", user);
         if (err) { return done(err); }
         if (!user) { return done(null, false); }
         if (!user.verifyPassword(password)) { return done(null, false); }
         return done(null, user);
-        });
+      });
     }
-))
+  ));
+ 
 
 module.exports = passport;
+
+

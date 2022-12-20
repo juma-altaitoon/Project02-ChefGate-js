@@ -9,6 +9,9 @@ exports.recipes_get = (req, res) => {
 exports.recipes_create_get = (req, res) =>{
     res.render("recipe/add")
 }
+exports.recipes_create_post = (req, res) => {
+    
+}
 
 exports.recipes_details_get = (req, res) => {
     res.render('recipe/details')

@@ -14,9 +14,10 @@ exports.auth_signup_get = (req, res) => {
     res.render("auth/signup");
 }
 // SignUp - POST 
-exports.auth_signup_post = (req,res) => {
-    let user = new User(req,res);
-
+exports.auth_signup_post = (req, res) => {
+    // console.log(req.body);
+    let user = new User(req.body);
+    
     let hash = bcrypt.hashSync(req.body.password, salt);
     console.log(hash)// To Check Hash password in database matches
     user.password = hash;
@@ -24,7 +25,7 @@ exports.auth_signup_post = (req,res) => {
     // Save user to database
     user.save()
     .then (() => {
-        res.redirect('auth/login');
+        res.redirect('/auth/login');
     })
     .catch(err => {
         console.log(err);
@@ -35,3 +36,23 @@ exports.auth_signup_post = (req,res) => {
 exports.auth_login_get = (req,res) => {
     res.render("auth/login");
 }
+
+// LogIn - POST
+exports.auth_login_post = 
+    passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/auth/login",
+    });
+//  LogOut - GET
+exports.auth_logout_get = (req, res) => {
+    // Exit Session 
+    req.logout(function(err){
+        if(err){
+            return next(err);
+        }
+        res.redirect("/")
+    });
+}
+
+
+
