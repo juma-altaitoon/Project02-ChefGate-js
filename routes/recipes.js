@@ -1,7 +1,7 @@
 const { urlencoded } = require('express');
 const express = require('express');
 const router = express.Router();
-// router.use(urlencoded({extended: true}));
+router.use(urlencoded({extended: true}));
 
 const recipeCtrl = require("../controllers/recipes");
 router.get("/recipe", recipeCtrl.recipes_get);

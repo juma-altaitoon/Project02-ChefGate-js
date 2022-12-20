@@ -17,8 +17,10 @@ app.use(express.static("public"));
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
 
-const passport = require('./helper/config');
 const session = require('express-session');
+const passport = require('./helper/config');
+
+app.set("view engine", "ejs");
 
 app.use(session ({
     secret: process.env.SECRET,
@@ -31,7 +33,10 @@ app.use(session ({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+app.use(function(req, res, next){
+    res.locals.currentUser = req.user;
+    next();
+})
 
 
 //Import and mount routes
@@ -50,6 +55,8 @@ app.use('/', chefRoute);
 const authRoute = require('./routes/auth');
 app.use('/', authRoute);
 
+
+
 mongoose.set('strictQuery', false);
 
 mongoose.connect(process.env.mongoDBURL,
@@ -58,7 +65,6 @@ mongoose.connect(process.env.mongoDBURL,
         console.log("Connected to MongoDB!")
     });
 
-app.set("view engine", "ejs");
 app.listen(port,() => {
     console.log("app is running");
 });

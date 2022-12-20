@@ -17,6 +17,9 @@ exports.recipes_create_get = (req, res) =>{
         console.log(err);
     })
 }
+exports.recipes_create_post = (req, res) => {
+    
+}
 
 exports.recipes_details_get = (req, res) => {
     res.render('recipe/details')
