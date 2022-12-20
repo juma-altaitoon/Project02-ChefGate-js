@@ -7,7 +7,7 @@
 
 <h1> Add Recipe </h1>
 
-<form method="POST" action="/recipe/add">
+<!-- <form method="POST" action="/recipe/add">
     <label for="recipe">Choose a catagory:</label>
     <br>
     <select id="catagory" name="catagory">
@@ -17,7 +17,7 @@
       <option value="appitizer">Appitizer</option>
       <option value="dessert">Dessert</option>
       <option value="beverage">Beverage</option>
-    </select>
+    </select> -->
 <br><br>
 <div id="reci-info">
     <div class="form-group" id="box-recipe1">
@@ -73,17 +73,20 @@
 
 <br>
     <!-- <button type="submit" class="btn btn-Success">Create Recipe</button> -->
+<p>Want to hone your cooking skill or are you looking to learn new tasty recipes?</p>
 </form>
 <section class="px-4 py2 my-2 text-center">
     <img src="/images/recipe1.png" alt="" width="400" height="400">
-    <h3 class="display-6 fw-bold">Be part of our kitchen and publish your recipe TODAY!</h3>
+    <h3 class="display-6 fw-bold">Sign up to join our kitchen and publish your recipe TODAY!</h3>
     
 </section>
+<button type="button" class="btn btn-warning" onclick="window.location.href='/auth/signup';">Sign-up</button>          </div>
+
 <br><hr>
 <!-- recipe container -->
-<section class="recipe-container">
+<!-- <section class="recipe-container"> -->
 <!-- tag: Add forms on details at Recipe folder  -->
-<div class="tag-container">
+<!-- <div class="tag-container">
     <h4>Recipes</h4>
 
     <div class="tags-list">
@@ -93,30 +96,31 @@
         <a href="/views/recipe/details.ejs">Dessert</a>
         <a href="/views/recipe/details.ejs">Dinner</a>
     </div>
-</div>
+</div> -->
 <!-- list  -->
 <!-- <div class="recipe-list"></div> -->
 </section>
 
-<section id="section-latest">
+<!-- <section id="section-latest">
     <div type="search" name="search" id="search--recipes" placeholder="Search">
     </div>
-    <div class="  row row-cols-4 ">
+    <div class="row row-cols-4 ">
         <a href="/recipe/add" clas="category_link">
             <div class="pic-1 pic-1--largest shadow cent">
             <div id="bahraini">
                 <img src="/images/food/indian-food.jpg" >
             </div> 
-        </div>
-            <h2>Bahraini Recipes</h2>
+        </div> -->
+            <!-- <h2>Bahraini Recipes</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
-            <br>
-        <div id="italian">
+            <br> -->
+        <!-- <div id="italian">
             <a href="/recipe/add" clas="category_link">
                 <div class="pic-1 pic-1--largest shadow">
                     <img src="/images/food/italian.png">    
         </div>
     </div>
+</a>
         <br>
         <div id="mex">
         <a href="/recipe/add" clas="category_link">
@@ -124,6 +128,7 @@
                 <img src="/images/food/mexican-food.jpg">
             </div>
         </div>
+    </a>
             <br>
             <div id="america">
             <a href="/recipe/add" clas="category_link">
@@ -133,32 +138,6 @@
             </div>
         </a>
     </div>
-    <br><br>
-    <!-- <div  id="main-recipe" >
-        <div class="recipe">
-            <img src="/images/food/indian-food.jpg" alt="">
-            <div class="box-recipe">
-                <h2>Bahraini Recipes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
-          
-            <img src="/images/food/chocolate-banoffe-whoopie-pies.jpg" alt="">
-            <div class="box-recipe">
-                <h2>Italian Recipes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
-  
-            <img src="/images/food/spanish-food.jpg" alt="">
-            <div class="box-recipe">
-                <h2>Spanish Recipes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
-           
-                <img src="/images/food/american-food.jpg" alt="">
-            <div class="box-recipe">
-                <h2>Amarican Recipes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
-           
-            </div> 
-        </div> 
-    </div> 
-</div>  -->
+    <br><br> -->
 
 </section>
