@@ -281,6 +281,15 @@ position: relative;
     background-color: black; 
 }
 
+.card-body{
+    background: darkslategrey;
+}
+.card-text{
+    color: chocolate;
+}
+p {
+    color: white;
+}
 #login{
     border-radius: 50%;
     width: 50%;
@@ -304,4 +313,37 @@ position: relative;
     width: 50%;
     justify-content: center;
     align-items: center;  
+}
+
+.center-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-small{
+    margin-top: 25px;
+}
+
+.button-style{
+    width: 100%;
+}
+
+.col-md-4{
+    display: flex;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center; 
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    background-color: black;  
+}
+/* #signup-center{
+    
+} */
+#navbarHeader{
+    color: aquamarine;
+    text-align: justify;
 }
