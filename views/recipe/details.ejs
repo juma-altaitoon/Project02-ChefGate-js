@@ -29,5 +29,16 @@
         <label>Author</label>
         <%= recipe.chef.userName %>        
     </div>
+    <div>
+        <label>Created At</label>
+        <%= moment(recipe.createdAt).fromNow() %>
+    </div>
+    
+    <div>
+        <label>Updated At</label>
+        <%= moment(recipe.updatedAt).fromNow() %>
+    </div>
+    <hr>
+    
     
    

@@ -104,3 +104,9 @@ Juma Altaitoon
 - Login and Sign up work. created and connected Logout button.
 - updated some chef routes and ejs pages.
 - working on userRoles so we can have one login for Chef and Users.
+
+Version 2.3 - 
+Juma Altaitoon
+- Created a User Dashboard on login
+- Modified Personalised pages for recipes chefs and users.
+-

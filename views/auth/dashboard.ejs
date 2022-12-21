@@ -6,7 +6,7 @@
             <div class="card-img-top align-content-center" width="100%" height="100%"><h2>My Recipes</h2></div>
                 <div class="card-body">
                 <!-- <h5 class="card-title">My Recipes</h5> -->
-                <a href="/recipe/myrecipes" class="btn btn-primary">View All</a>
+                <a href="/recipe/myrecipes?id=<%= currentUser._id %>" class="btn btn-primary">View All</a>
                 <a href="/recipe/add" class="btn btn-primary">Add Recipe</a>
             </div>
         </div>
@@ -16,8 +16,8 @@
             <div class="card-img-top align-content-center" width="100%" height="100%"><h2>Chef Profile</h2></div>
             <div class="card-body">
             <!-- <h5 class="card-title">Chef Profile</h5> -->
-            <a href="/chef/details" class="btn btn-primary">View</a>
-            <a href="/chef/edit" class="btn btn-primary">Edit</a>
+            <a href="/chef/details?id=<%= currentUser._id %>" class="btn btn-primary">View</a>
+            <a href="/chef/edit?id=<%= currentUser._id %>" class="btn btn-primary">Edit</a>
             </div>
         </div>
     </div>
