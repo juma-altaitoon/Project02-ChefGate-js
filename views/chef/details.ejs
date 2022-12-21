@@ -1,29 +1,30 @@
 <h1> Details /  Profile</h1>
-<% if(user.userRole === "Chef") {%>
+<!-- <% if(user.userRole === "Chef") {%> -->
   <div>
       <label>Profile Picture</label><br>
   </div>
   <br>
   <div>
       <label>User Role</label>
-      <%= user.userRole %>
+      <h5><%= user.userRole %></h5>
   </div>
   <br>
     <div>
-      <label>First name</label>
-      <%= user.firstName %>
+      <label>First Name</label>
+      <h5><%= user.firstName %></h5>
     </div>
     <div>
-      <label>Last name</label>
-      <%= user.lastName %>
+      <label>Last Name</label>
+      <h5><%= user.lastName %></h5>
     </div>
-  </div>
+  
   <div>
-      <label>Username</label>
-      <%= user.userName %>
+      <label>User Name</label>
+      <h5><%= user.userName %></h5>
   </div>
   <div>
       <label>Email</label>
-      <%= user.emailAddress %>
+      <h5><%= user.emailAddress %></h5>
   </div>
-<% } %>
+  <hr>
+<!-- <% } %> -->

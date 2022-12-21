@@ -1,21 +1,13 @@
 <h1>User Edit Page</h1>
 
 <br><br>
-<% if(currentUser._id === user._id) { %>    
+   
 <form method="POST" action="/chef/update?_method=PUT">
 
     <div class="form-group">
         <label class="custom-file-label" for="validatedCustomFile">Upload Profile Picture</label><br>
         <input type="file" class="custom-file-input" id="validatedCustomFile">
         <div class="invalid-feedback">Example invalid custom file feedback</div>
-    </div>
-    <br>
-    <div class="form-group col-md-4 mb-3">
-        <select name="userRole" class="form-control" placeholeder="Select User Type">
-          <option value="">Select Role</option>
-          <option value="User">User</option>
-          <option value="Chef">Chef</option>
-        </select>
     </div>
     <br>
     <div class="form-row">
@@ -42,4 +34,3 @@
 
 
   </form>
-<% } %>

@@ -9,7 +9,7 @@ exports.recipes_get = (req, res) => {
 }
 // Load Recipe Add - GET
 exports.recipe_add_get = (req, res) =>{
-    User.find().populate('recipe')
+    Recipe.find().populate('chef')
     .then(recipe => {
         res.render("recipe/add", {recipe})
     })
@@ -19,7 +19,13 @@ exports.recipe_add_get = (req, res) =>{
 }
 
 exports.recipes_index_get = (req, res) => {
-    res.render('recipe/index')
+    Recipe.find()
+    .then(recipes => {
+        res.render('recipe/index', {recipes, moment})
+    })
+    .catch((err)=> {
+        console.log(err);
+    })
 }
 //  Recipe page by Id - GET
 exports.recipe_details_get = (req, res) => {
@@ -76,10 +82,10 @@ exports.recipe_add_post = (req, res) => {
     let recipe = new Recipe(req.body);
     recipe.save()
     .then(()=>{
-        User.findById(req.body.chef, (err, user) =>{
+        User.findById(req.body.chef, (err, chef) =>{
             console.log(recipe);
-            user.recipe.push(recipe);
-            user.save();
+            chef.recipe.push(recipe);
+            chef.save();
         })
         res.redirect("/recipe/myrecipes");
     })

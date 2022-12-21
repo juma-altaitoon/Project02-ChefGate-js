@@ -1,4 +1,4 @@
-make a condition like isLogin to prevent interference
+<!-- make a condition like isLogin to prevent interference -->
 
 <h1> Add Recipe </h1>
 
@@ -38,7 +38,7 @@ make a condition like isLogin to prevent interference
 
     <div class="form-group">
         <label>Author</label>
-        <h5 name="chef" class="form-control" value="<%= currentUser._id %>"><%= currentUser.userName %></h5>        
+        <input type="hidden" name="chef" class="form-control" value="<%= currentUser._id %>" />   
     </div>
     <br>
     <button type="submit" class="btn btn-dark">Create Recipe</button>

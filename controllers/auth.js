@@ -2,6 +2,7 @@
 const User = require("../models/User")
 // Require Passport
 const passport = require('../helper/config');
+const moment = require('moment');
 //  Require bcrypt
 const bcrypt = require("bcrypt");
 const salt = 10;
@@ -61,9 +62,9 @@ exports.auth_logout_get = (req, res) => {
 
 // User Index
 exports.user_index_get = (req,res)=>{
-    User.find().populate('recipe')
+    User.find()
     .then(user => {
-        res.render("auth/index", {user, moment})
+        res.render("auth/index", {user})
     })
     .catch((err)=> {
         console.log(err);
@@ -96,7 +97,7 @@ exports.auth_edit_get = (req,res) => {
 exports.auth_update_put = (req, res) => {
     User.findByIdAndUpdate(req.body.id, req.body)
     .then(() => {
-        res.redirect("/auth/dashboard");
+        res.redirect("/recipe/myrecipes");
     })
     .catch(err => {
         console.log(err);
