@@ -1,3 +1,49 @@
+
+<h1> Edit Recipe </h1>
+
+<form method="POST" action="/recipe/update?_method=PUT">
+
+    <div class="form-group">
+        <label>What's on the menu?</label>
+        <input type="text" name="mealName" value="<%= recipe.mealName %>" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Add ingrediants</label>
+        <input type="text" name="mealIngrediants" value="<%= recipe.mealIngrediants %>" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>About the recipe</label>
+        <input type="text" name="mealDescription" value="<%= recipe.mealDescription %>" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <label>Preperation Time</label>
+        <input type="text" name="prepareTime" value="<%= recipe.prepareTime %>" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <select name="category" id="category" class="form-control">
+            <option value="">Select Category</option>
+            <option value="Bahraini">Bahraini</option>
+            <option value="American">American</option>
+            <option value="Italian">Italian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Greek">Greek</option>
+        </select>        
+    </div>
+
+    <div class="form-group">
+        <label>Author</label>
+        <h5 name="chef" class="form-control" value="<%= currentUser._id %>"><%= currentUser.userName %></h5>        
+    </div>
+    <br>
+    <button type="submit" class="btn btn-dark">Update Recipe</button>
+
+</form>
+=======
 <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold">Submit Your Recipe</h1>
     <div class="col-lg-6 mx-auto">
@@ -81,3 +127,4 @@
   
     </div>
   </div>
+

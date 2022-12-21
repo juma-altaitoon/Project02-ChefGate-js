@@ -114,3 +114,9 @@ Version 2.2.3
 Maitham Alaraibi
 - Worked on style.css for sign-in and sign-up.
 - Improved text-style on home page, sign-in, sign-up, recipes, and blog.
+
+Version 2.3 
+Juma Altaitoon
+- Created a User Dashboard on login
+- Modified Personalised pages for recipes chefs and users.
+

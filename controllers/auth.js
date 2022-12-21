@@ -15,7 +15,7 @@ exports.auth_signup_get = (req, res) => {
 }
 // SignUp - POST 
 exports.auth_signup_post = (req, res) => {
-    // console.log(req.body);
+    console.log(req.body.userRole);
     let user = new User(req.body);
     
     let hash = bcrypt.hashSync(req.body.password, salt);
@@ -40,9 +40,14 @@ exports.auth_login_get = (req,res) => {
 // LogIn - POST
 exports.auth_login_post = 
     passport.authenticate("local", {
-        successRedirect: "/",
+        successRedirect: "/auth/dashboard",
         failureRedirect: "/auth/login",
     });
+// Dashboard  - GET
+exports.auth_dashboard_get = (req,res) =>{
+    res.render("auth/dashboard")
+} 
+
 //  LogOut - GET
 exports.auth_logout_get = (req, res) => {
     // Exit Session 
@@ -54,5 +59,48 @@ exports.auth_logout_get = (req, res) => {
     });
 }
 
+// User Index
+exports.user_index_get = (req,res)=>{
+    User.find().populate('recipe')
+    .then(user => {
+        res.render("auth/index", {user, moment})
+    })
+    .catch((err)=> {
+        console.log(err);
+    })
+}
+
+// User Page
+exports.user_details_get = (req, res) => {
+    User.findById(req.query.id)
+    .then(user => {
+        res.render('chef/details', {user, moment});
+    })
+    .catch(err => {
+        console.log(err);
+    })
+}
+
+// Edit -GET
+exports.auth_edit_get = (req,res) => {
+    User.findById(req.query.id).populate()
+    .then(user => {
+        res.render("chef/edit", {user});
+    })
+    .catch(err => {
+        console.log(err);
+    })
+}
+
+//  Update
+exports.auth_update_put = (req, res) => {
+    User.findByIdAndUpdate(req.body.id, req.body)
+    .then(() => {
+        res.redirect("/auth/dashboard");
+    })
+    .catch(err => {
+        console.log(err);
+    })
+}
 
 
