@@ -38,6 +38,16 @@ exports.recipe_create_post = (req, res) => {
     let recipe = new recipe(req.body);
 }
 
+exports.myrecipes_index_get = (req, res) => {
+    Recipe.find()
+    .then(recipes => {
+        res.render("recipe/myrecipes", {recipes, moment})
+    })
+    .catch((err)=> {
+        console.log(err);
+    })
+}
+
 
 // POST
 exports.recipes_post = (req, res) => {

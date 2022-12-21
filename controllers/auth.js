@@ -15,7 +15,7 @@ exports.auth_signup_get = (req, res) => {
 }
 // SignUp - POST 
 exports.auth_signup_post = (req, res) => {
-    // console.log(req.body);
+    console.log(req.body.userRole);
     let user = new User(req.body);
     
     let hash = bcrypt.hashSync(req.body.password, salt);
@@ -40,9 +40,15 @@ exports.auth_login_get = (req,res) => {
 // LogIn - POST
 exports.auth_login_post = 
     passport.authenticate("local", {
-        successRedirect: "/",
+        successRedirect: "/auth/dashboard",
         failureRedirect: "/auth/login",
     });
+// Dashboard  - GET
+exports.auth_dashboard_get = (req,res) =>{
+
+    res.render("auth/dashboard")
+} 
+
 //  LogOut - GET
 exports.auth_logout_get = (req, res) => {
     // Exit Session 
