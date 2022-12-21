@@ -40,7 +40,7 @@ const userSchema = mongoose.Schema ({
     userRole: {
         type: String,
         enum: ["Admin", "User", "Chef"],
-        required: false
+        required: true
     },
 
     profilePicture: {
