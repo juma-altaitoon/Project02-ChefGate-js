@@ -96,7 +96,6 @@ Maitham Alaraibi
 - Added the POST onto routes.
 - Fixed the Author issue in the Recipe/Add in addition replaced the '#' with 'add'.
 - Aligned and chnaged the appearance of Add recipe in addition included ingrediants and cooking time.
-- Added new pictures to the blog and recipe pages.
 
 
 Version 2.2.1 -
@@ -105,8 +104,19 @@ Juma Altaitoon
 - updated some chef routes and ejs pages.
 - working on userRoles so we can have one login for Chef and Users.
 
-Version 2.3 - 
+Version 2.2.2
+Maitham Alaraibi
+- Used bootstrap to change the header and nav features.
+- Added four recipes using card and made some actual writing.
+- changed the login looks. However, the position is still to the left instead of Center.
+
+Version 2.2.3
+Maitham Alaraibi
+- Worked on style.css for sign-in and sign-up.
+- Improved text-style on home page, sign-in, sign-up, recipes, and blog.
+
+Version 2.3 
 Juma Altaitoon
 - Created a User Dashboard on login
 - Modified Personalised pages for recipes chefs and users.
--
+
