@@ -13,11 +13,11 @@
     <div class="form-row">
       <div class="col-md-4 mb-3">
         <label for="validationDefault01">First name</label>
-        <input type="text" class="form-control" id="validationDefault01" name="firstName" placeholder="First name" required>
+        <input type="text" class="form-control" id="validationDefault01" name="firstName" value="<%= user.firstName %>" placeholder="First name" required>
       </div>
       <div class="col-md-4 mb-3" id="lsname">
         <label for="validationDefault02">Last name</label>
-        <input type="text" class="form-control" id="validationDefault02" name="lastName" placeholder="Last name" required>
+        <input type="text" class="form-control" id="validationDefault02" name="lastName" value="<%= user.lastName %>" placeholder="Last name" required>
       </div>
     </div>
     <div class="col-md-4 mb-3">
@@ -26,7 +26,7 @@
             <div class="input-group-prepend">
              <span class="input-group-text" id="inputGroupPrepend2">@</span>
             </div>
-            <input type="text" class="form-control" id="validationDefaultUsername" name="userName" placeholder="Username" aria-describedby="inputGroupPrepend2">
+            <input type="text" class="form-control" id="validationDefaultUsername" name="userName" value="<%= user.userName %>" placeholder="Username" aria-describedby="inputGroupPrepend2">
         </div>
     </div>
 

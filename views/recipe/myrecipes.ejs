@@ -12,16 +12,17 @@
       </tr>
     </thead>
     <tbody>
-<% recipes.forEach(function(recipe){
-    if(currentUser._id === recipe.chef) { %>    
+
+<% recipes.forEach(function(recipe){ %>
+
       <tr>
         <td><a href="/recipe/details?id=<%= recipe._id %>"><%= recipe.mealName %></a></td>
-        <td><%= recipe.mealType %></td>
+        <td><%= recipe.category %></td>
         <td><%= moment(recipe.createdAt).fromNow() %></td>
         <td><%= moment(recipe.updatedAt).fromNow() %></td>
         <td><a href="/recipe/edit?id=<%= recipe._id %>">Edit</a></td>
         <td><a href="/recipe/delete?id=<%= recipe._id %>">Delete</a></td>
       </tr>
-<% }}) %>
+<% }) %>
     </tbody>
 </table>

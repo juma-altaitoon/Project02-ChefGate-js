@@ -84,7 +84,7 @@ exports.user_details_get = (req, res) => {
 
 // Edit -GET
 exports.auth_edit_get = (req,res) => {
-    User.findById(req.query.id).populate()
+    User.findById(req.query.id).populate('recipe')
     .then(user => {
         res.render("chef/edit", {user});
     })
@@ -97,7 +97,7 @@ exports.auth_edit_get = (req,res) => {
 exports.auth_update_put = (req, res) => {
     User.findByIdAndUpdate(req.body.id, req.body)
     .then(() => {
-        res.redirect("/recipe/myrecipes");
+        res.redirect("/auth/dashboard");
     })
     .catch(err => {
         console.log(err);

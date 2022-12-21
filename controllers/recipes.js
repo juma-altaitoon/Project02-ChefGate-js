@@ -29,7 +29,7 @@ exports.recipes_index_get = (req, res) => {
 }
 //  Recipe page by Id - GET
 exports.recipe_details_get = (req, res) => {
-    Recipe.findById(req.query.id)
+    Recipe.findById(req.query.id).populate('chef')
     .then(recipe => {
         res.render('recipe/details', {recipe , moment})    
     })
@@ -55,7 +55,7 @@ exports.recipe_edit_get = (req, res) => {
 
 //  My Recipes Index - GET
 exports.myrecipes_index_get = (req, res) => {
-    Recipe.find()
+    Recipe.find().populate('chef')
     .then(recipes => {
         res.render("recipe/myrecipes", {recipes, moment})
     })
