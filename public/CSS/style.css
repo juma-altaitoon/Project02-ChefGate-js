@@ -1,7 +1,7 @@
 body {
     padding: 30px;
     text-align: center;
-    background: rgb(42, 42, 51);
+    background: rgb(223, 134, 0);
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-family: 'Fredericka the Great', cursive;
@@ -17,23 +17,6 @@ body {
     padding: 15px;
     margin:5px
 }
-/* a {color: let(--bs-dark);}
-/*  */
-/* .pai {
-    color: black;
-    background-color: rgb(99, 193, 123);
-    padding: 40px;
-    font-size: larger;
-} */
-/* .app{
-     width: 50rem;
-    height: 30rem;
-    box-shadow: 0 45px 90px black;
-    margin: 10px 0;
-    display: grid; 
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr;
-} */
 
 .header{
     display: grid;
@@ -56,7 +39,7 @@ img {
   margin-right: auto;
 }
 
-.category__link{
+.category_link{
     text-align: center;
     display: block;
     text-decoration: none;
@@ -119,7 +102,7 @@ ul {
     justify-content: center;
     z-index: 10;
     margin: 0 auto;
-    color: rgb(105, 193, 197);
+    color: rgb(55, 243, 171)
 }
 #sc-footer {
     margin: 100px 0 0;
@@ -138,20 +121,16 @@ main{
     text-decoration: none;
     outline: none;
 }
-#box1{
+/* #box1{
 border-right: 1px sold grey;
-}
+} */
 .box{
     width: 100%;
     height: 90px;
     display: flex;
     justify-content: center;
 }
-#footer-logo{
-    background: url('/public/images/logo-01.png');
-    margin: 20px 0;
-    bottom: 10px;
-}
+
 #footernav{
     display: flex;
     justify-content: center;
@@ -169,30 +148,7 @@ ul a {
     justify-content: center;
     align-items: center;
     width: 40px;
-    
 }
-/* still background is not working*/
-#bk-sign{
-    background: url(../images/foodbk.png);
-    background-size: cover;
-    animation: infinite;
-}
-/* 
-#fsname{
-    justify-content: center;
-    align-items: center;
-    left: 40px;
-}
-#lsname{
-    justify-content: center;
-    align-items: center;
-    left: 40px;
-} */
-
-/* #youtube {
-    display: block;
-    width: 300px;
-} */
 #main-recipe{
 position: relative;
     grid-gap: 25px;
@@ -346,4 +302,9 @@ p {
 #navbarHeader{
     color: aquamarine;
     text-align: justify;
+}
+#contact-us{
+    /* grid:25%; */
+    display: inline-block;
+    justify-content:space-evenly;
 }

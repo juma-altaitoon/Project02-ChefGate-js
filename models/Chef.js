@@ -3,12 +3,6 @@ const chefSchema = mongoose.Schema({
     firstName: String,
     LastName: String,
     emailAddress: String,
-    
-    recipe: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Recipe'
-    }]
-
 },
 {
     timestamps: true
