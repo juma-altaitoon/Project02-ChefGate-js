@@ -8,9 +8,9 @@ Special thanks to our classmates for their inputs.
 
 
 ## Author
-- Jassim Dhaif
-- Juma Altaiton
-- Maitham Alaraibi
+- Jassim Dhaif - Backend: MongoDB, Node JS, JS
+- Juma Altaiton - Forntend, Node JS, JS, CSS
+- Maitham Alaraibi - Frontend, Node JS, CSS, JS 
 
 ## Technology Used 
 
@@ -36,3 +36,6 @@ Recipe Page:
 ![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/2.png "Logo Title Text 1")
 
 
+## Sample 3
+Contact US Page: 
+![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/3.png "Logo Title Text 1")
