@@ -10,7 +10,7 @@ Special thanks to our classmates for their inputs. Special thanks to Najim's sen
 ## Author
 - Jassim Dhaif - Backend: MongoDB, Embeded JS, JS
 - Juma Altaiton - Forntend, Embeded JS, JS, CSS
-- Maitham Alaraibi - Frontend, Embeded JS, CSS, JS 
+- Maitham Alaraibi - Frontend, Embeded JS, CSS,
 
 ## User story
 -Build a website for chef to include pages about: recipes, contact and signup/signin. 
