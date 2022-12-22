@@ -54,3 +54,9 @@ Contact US Page:
 ## Sample 5
 Add Recipe Page: 
 ![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/5.png "Logo Title Text 1")
+
+
+# Moving forward
+- Adding videos
+- health blog on food and blood.
+- Outdoor events.
