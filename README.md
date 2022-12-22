@@ -12,30 +12,43 @@ Special thanks to our classmates for their inputs.
 - Juma Altaiton - Forntend, Node JS, JS, CSS
 - Maitham Alaraibi - Frontend, Node JS, CSS, JS 
 
-## Technology Used 
+## User story
+-Build a website for chef to include pages about, recipes, contact and signup/signin. 
+-Make page to sign for chef, user, and admin.
+-Make page to display recipe content and cooking time.
+-So user can interact with the recipe written by the chef.
 
+## Technology Used 
+-JS
 - Node JS
 - CSS
 
 ## Project Description
-* Our project is based on food blog with twist of sharing the homemade recipes.
-* Our aim is to produce a website that help our viewers and participants to experince how easy to cook dilusios meal at home whenever they like.
-* We included some of international dishes to help promot new experince for our users.
-* Users are able to make and share their own recipe with our community.
+* Our project is based on a food blog with a twist of sharing homemade recipes.
+* we aim to produce a website that helps our viewers and participants to experience how easy to cook delcious meals at home whenever they like.
+* We included some international dishes to help promote new experiences for our users.
+* Users are able to make and share their own recipes with our community.
 
 
 # Wireframe
 
 ## Sample 1
+About US Page: 
+![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/4.png "Logo Title Text 1")
+
+
+## Sample 2
 Blog page: 
 ![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/1.png "Logo Title Text 1")
 
 
-## Sample 2
+## Sample 3
 Recipe Page: 
 ![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/2.png "Logo Title Text 1")
 
 
-## Sample 3
+## Sample 4
 Contact US Page: 
 ![alt text](https://git.generalassemb.ly/santamew/JJM_/blob/master/wireframe/3.png "Logo Title Text 1")
+
+
