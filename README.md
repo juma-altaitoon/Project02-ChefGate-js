@@ -13,13 +13,12 @@ Special thanks to our classmates for their inputs.
 - Maitham Alaraibi - Frontend, Node JS, CSS, JS 
 
 ## User story
--Build a website for chef to include pages about, recipes, contact and signup/signin. 
--Make page to sign for chef, user, and admin.
--Make page to display recipe content and cooking time.
--So user can interact with the recipe written by the chef.
+-Build a website for chef to include pages about: recipes, contact and signup/signin. 
+-Make page to sign-in and sign-up for chef, user, and admin, so admin can controll the pages, chef can add recipes, user can view.
+-Make page to add and to display recipe content and cooking time.So user can interact with the recipe written by the chef.
 
 ## Technology Used 
--JS
+- JS
 - Node JS
 - CSS
 
