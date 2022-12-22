@@ -8,9 +8,9 @@ Special thanks to our classmates for their inputs. Special thanks to Najim's sen
 
 
 ## Author
-- Jassim Dhaif - Backend:bcrypt, ejs, dotenv,express, moment, nodemon, passport, passport-local, mongoose, MongoDB, Embeded JS, JS
-- Juma Altaiton - Forntend, Embeded JS, JS, CSS
-- Maitham Alaraibi - Frontend, Embeded JS, CSS,
+- Jassim Dhaif - Backend:bcrypt, ejs, dotenv,express, moment, nodemon, passport, passport-local, mongoose, MongoDB, Embeded JS, JS, express.
+- Juma Altaiton - Forntend, Embeded JS, JS, CSS.
+- Maitham Alaraibi - Frontend, Embeded JS, CSS.
 - Backend: bootstrap, bootstrap-icon
 ## User story
 -Build a website for chef to include pages about: recipes, contact and signup/signin. 
