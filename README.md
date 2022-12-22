@@ -8,10 +8,10 @@ Special thanks to our classmates for their inputs. Special thanks to Najim's sen
 
 
 ## Author
-- Jassim Dhaif - Backend: MongoDB, Embeded JS, JS
+- Jassim Dhaif - Backend:bcrypt, ejs, dotenv,express, moment, nodemon, passport, passport-local, mongoose, MongoDB, Embeded JS, JS
 - Juma Altaiton - Forntend, Embeded JS, JS, CSS
 - Maitham Alaraibi - Frontend, Embeded JS, CSS,
-
+- Backend: bootstrap, bootstrap-icon
 ## User story
 -Build a website for chef to include pages about: recipes, contact and signup/signin. 
 -Make page to sign-in and sign-up for chef, user, and admin, so admin can controll the pages, chef can add recipes, user can view.
