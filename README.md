@@ -4,7 +4,7 @@
 ## Acknowledgements
 
 To our instructors Saad, Alex, and Summaya for their assist and gurance. 
-Special thanks to our classmates for their inputs.
+Special thanks to our classmates for their inputs. Special thanks to Najim's sense of humor.
 
 
 ## Author
