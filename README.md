@@ -8,9 +8,9 @@ Special thanks to our classmates for their inputs.
 
 
 ## Author
-- Jassim Dhaif - Backend: MongoDB, Node JS, JS
-- Juma Altaiton - Forntend, Node JS, JS, CSS
-- Maitham Alaraibi - Frontend, Node JS, CSS, JS 
+- Jassim Dhaif - Backend: MongoDB, Embeded JS, JS
+- Juma Altaiton - Forntend, Embeded JS, JS, CSS
+- Maitham Alaraibi - Frontend, Embeded JS, CSS, JS 
 
 ## User story
 -Build a website for chef to include pages about: recipes, contact and signup/signin. 
